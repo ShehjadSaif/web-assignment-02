@@ -1,0 +1,245 @@
+.flexbox{
+    display: flex;
+}
+
+nav{
+    padding: 5px 10% 15px 10%;
+}
+
+.intro{
+    padding: 0 10%;
+}
+
+.about{
+    padding: 0 10%;
+}
+
+.work{
+    margin: 0 -10px;
+    padding: 70px 0 100px 0;
+}
+
+.work .w2{
+    padding: 0 10%;
+}
+
+ul{
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+li{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: tomato;
+}
+
+.intro, .about{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro div{
+    width: 30%;
+}
+
+.about div{
+    width: 40%;
+}
+
+h1{
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    margin: 0 0;
+    line-height: 40px;
+}
+
+h1 span{
+    color: tomato;
+}
+
+.intro h1{
+    font-family: 'Bebas Neue';
+    font-size: 70px;
+    margin: 0 0;
+    line-height: 1em;
+}
+
+.intro h1 span{
+    color: tomato;
+}
+
+.intro p, .about p{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 1.5em;
+}
+
+.intro button, .about button{
+    border: none;
+    padding: 1.3em;
+    color: white;
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+.intro button:hover, .about button:hover{
+    background-color: rgb(255, 57, 22);
+}
+
+.intro i, .about i{
+    margin-right: 7px;
+}
+
+.intro button h4, .about button h4{
+    margin: 0;
+}
+
+/* .intro div, .about div{
+    border: 5px black solid;
+} */
+
+
+
+.intro img, .about img{
+    width: 400px;
+    /* border: 5px black solid; */
+}
+
+.w1{
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+}
+
+.w2{
+    justify-content: space-between;
+}
+
+.work{
+    background: rgb(243, 243, 243);
+}
+
+.work .card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.work .card:hover{
+    background: tomato;
+}
+
+.card h3{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.card p{
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.work img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.last{
+    justify-content: center;
+    padding: 65px 0;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100px;
+    max-width: 60%;
+    border-radius: 15px;
+    padding: 30px 50px;
+    background: url(/shapes/Group_33094_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.banner button{
+    border: none;
+    padding: 15px 15px;
+    color: white;
+    background-color: tomato;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    justify-content: flex-end;
+}
+
+.banner button:hover{
+    background-color: rgb(255, 57, 22);
+}
+
+.banner h4{
+    margin: 0;
+    padding: 0px 0px;
+}
+
+.banner i{
+    margin-right: 7px;
+}
+
+footer{
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1{
+    margin: 0;
+    font-size: 18px;
+}
+
+footer h2{
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+footer img{
+    height: 25px;
+    width: auto;
+    padding: 7px 7px 25px 7px;
+}
+
+button{
+    display: flex;
+}
+
+@media all and (max-width: 800px){
+    .intro{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+    
+    .w2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
